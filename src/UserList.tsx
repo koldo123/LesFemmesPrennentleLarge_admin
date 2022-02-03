@@ -9,8 +9,8 @@ import {
   NumberField,
   Record,
   TextField,
-} from 'react-admin';
-import BooleanNumField from './BooleanNumField.jsx';
+} from "react-admin";
+import BooleanNumField from "./BooleanNumField.jsx";
 
 type recordType = {
   admin: boolean;
@@ -21,10 +21,11 @@ const UserList = (props: ListProps) => {
   return (
     <List {...props}>
       <Datagrid rowClick="edit">
-        <NumberField source="id_user" sortBy="users.id_user" />
+        <NumberField source="id_user" />
         <TextField source="firstname" />
         <TextField source="lastname" />
         <EmailField source="email" />
+        <BooleanNumField source="wahine" />
         <BooleanNumField source="admin" />
       </Datagrid>
     </List>

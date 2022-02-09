@@ -4,7 +4,7 @@ import {
   NumberInput,
   SimpleForm,
   TextInput,
-} from 'react-admin';
+} from "react-admin";
 
 const UserEdit = (props: ListProps) => (
   <Edit {...props}>
@@ -13,6 +13,7 @@ const UserEdit = (props: ListProps) => (
       <TextInput source="firstname" />
       <TextInput source="lastname" />
       <TextInput source="email" />
+      <NumberInput source="wahine" />
       <NumberInput source="admin" />
     </SimpleForm>
   </Edit>

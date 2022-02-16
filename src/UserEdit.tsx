@@ -14,7 +14,7 @@ const UserEdit = (props: ListProps) => (
       <TextInput source="lastname" />
       <TextInput source="email" />
       <NumberInput source="wahine" />
-      <NumberInput source="wahine_request" />
+      <NumberInput source="wahine_request" disabled />
       <NumberInput source="admin" />
     </SimpleForm>
   </Edit>

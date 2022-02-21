@@ -26,6 +26,7 @@ const UserList = (props: ListProps) => {
         <TextField source="lastname" />
         <EmailField source="email" />
         <BooleanNumField source="wahine" />
+        <BooleanNumField source="wahine_request" />
         <BooleanNumField source="admin" />
       </Datagrid>
     </List>
